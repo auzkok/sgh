@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Seznam, Go Home",
+    "version": "1.0",
+  
+    "description": "Removes Seznam.cz annoing redirect to consent page.",
+  
+    "icons": {
+        "48": "icons/sgh48.png",
+        "96": "icons/sgh96.png"
+    },
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"],
+  
+    "background": {
+    "scripts": ["src/sgh.js"]
+    },
+
+    "web_accessible_resources": [
+          "data/blank.js"
+      ]
+}
